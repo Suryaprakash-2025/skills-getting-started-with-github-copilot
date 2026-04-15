@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <p><strong>Participants:</strong></p>
           <ul class="participants-list">
-            ${details.participants.map(email => `<li>${email}</li>`).join('')}
+            ${details.participants.map(email => `<li>${email} <button class="delete-btn" data-email="${email}" data-activity="${name}">×</button></li>`).join('')}
           </ul>
         `;
 
